@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Книжная полка</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="icon" href="https://bookshelf.follow-trend.ru/emblem_library.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://bookshelf.follow-trend.ru/emblem_library.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="wrapper">
+        <article class="booklist">
+            <h1 class="booklist__title">Книжная полка</h1>
+            <button id="button__adding-form--open1" class="booklist__button__main button--add-book">Добавить книгу</button>
+            <table class="booklist__table" border="0" cellspacing="0">
+                <tbody id="booklist__tbody">
+                    <tr class="booklist__item">
+                        <td class="booklist__item--photo">
+                            <img src="img/first_book.jpg" alt="Javascript и Jquery" width="60px" height="100px" />
+                        </td>
+                        <td class="booklist__item--description">
+                            <div class="book__description">
+                                <h6 class="book__description-name">
+                                    Javascript и Jquery
+                                </h6>
+                                <p class="book__description-autor">
+                                    Дэвид Сойер Макфалланд 
+                                </p>
+                                <div class="inlaining">
+                                 <p class="book__description-year">
+                                    2016
+                                </p>
+                                <p> г.</p>
+                                </div>
+                             </div>
+                        </td>
+                        <td class="booklist__item--button-block">
+                            <div class="booklist__item--buttons">
+                                <button data-action="edit" class="booklist__button button--edit-book">Редактировать</button>
+                                <button data-action="delete" class="booklist__button button--del-book">Удалить</button>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+
+        </article>
+        <article id="add-book" class="add-book visible--disable">
+            <h2 class="add-book__title">Книжная полка</h2>
+
+            <div id="button__adding-form--open2" class="add-book__button"></div>
+            <div class="add-book__form-block">
+                <form name="add-book__form" class="add-book__form">
+                    <p>
+                        <label class="add-book__label">Наименование</label>
+                        <br>
+                        <input id="bookName" type="text" class="add-book__input" name="add-book__desc">
+                    </p>
+                    <p>
+                        <label class="add-book__label">Автор</label>
+                        <br>
+                        <input id="bookAutor" type="text" class="add-book__input" name="add-book__autor">
+                    </p>
+                    <p>
+                        <label class="add-book__label">Год выпуска</label>
+                        <br>
+                        <input id="bookYear" type="text" size="5" class="add-book__input add-book__input--year" name="add-book__year" max="2017">
+                    </p>
+                    <p>
+                        <label class="add-book__label">Изображение</label>
+                        <br>
+                        <input id="bookPicture" type="text" class="add-book__input" name="add-book__img">
+                        <input id="bookNam" type="text" class="add-book__input visible--disable" name="add-book__nam">
+                    </p>
+                    <p>
+                        <input id="button--save" class="add-book__button button--save" type="button" name="add-book--save-form" value="Сохранить"
+                        />
+                        <input id="button--close" class="add-book__button button--close" type="button" name="add-book--close-form" value="Отменить"
+                        />
+                    </p>
+            </div>
+
+
+
+        </article>
+    </section>
+    <div id="add-book--background" class="add-book--background visible--disable"></div>
+
+    <footer>
+        <p> Thank you &#8826EPAM&#8827 for your time! Written with pleasure by 
+            <a href="https://www.facebook.com/vyacheslav.plekhanov" target="_blank">Vyacheslav Plekhanov</a>.
+        </p>
+    </footer>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

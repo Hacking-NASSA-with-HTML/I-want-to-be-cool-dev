@@ -1,0 +1,292 @@
+
+
+.body {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1147px;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.wrapper {
+  max-width: 990px;
+  width: 70%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.visible--anable {
+  display: inherit;
+}
+
+.visible--disable {
+  display: none;
+}
+
+.booklist {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px 15px 15px;
+  background-color: #eee;
+  text-align: left;
+}
+
+.add-book {
+  max-width: 940px;
+  width: 69%;
+  margin: -280px 0px 0px 0px;
+  padding: 0px 15px 15px 15px;
+  background-color: #eee;
+  text-align: left;
+  z-index: 100;
+  position: absolute;
+}
+
+.booklist__title, .add-book__title {
+  margin: 0 auto 24px;
+  font-size: 43px;
+  font-family: 'PT Serif', serif;
+}
+
+.booklist__table, .add-book__form {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.booklist__item {
+  height: 100px;
+}
+
+.booklist__item--photo {
+  width: 10%;
+  border-bottom: 1px solid #eee;
+  padding: 15px 30px;
+}
+
+.booklist__item--desription {
+  width: 70%;
+  border-bottom: 1px solid #eee;
+}
+
+.booklist__item--button-block {
+  width: 20%;
+  border-bottom: 1px solid #eee;
+}
+
+.booklist__item--buttons {
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.book__description {
+  padding: 10px 20px;
+}
+
+.book__description-name {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.book__description-autor {
+  font-size: 14px;
+}
+
+.book__description-year {
+  font-size: 14px;
+}
+
+.add-book__form-block {
+  width:70%;
+  margin-left: 110px;
+}
+
+.add-book__form {
+width: -webkit-calc(100% - 60px);
+width: -webkit-calc(100% - 60px);
+}
+
+.add-book__label {
+  margin-left: 70px;
+  font-size: 14px;
+  color: #333;
+  font-family: 'PT Serif', serif;
+}
+
+.add-book__input {
+  margin: 10px 0 0 70px;
+  width: 70%;
+  height: 18px;
+}
+
+.add-book__input--year {
+  width: 10%;
+}
+  
+.add-book--background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 19;
+}
+
+.button--add-book {
+  width: 220px;
+  height: 60px;
+  font-size: 19px;
+  color: #fff;
+  background-color: rgb(17, 90, 224);
+  padding: 5px 52px;
+  cursor: pointer;
+  font-family: 'PT Serif', serif;
+}
+
+.button--edit-book {
+  width: 130px;
+  height: 30px;
+  color: #bbb;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.button--edit-book:hover {
+  background-color: #104cb4;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.button--del-book {
+  width: 130px;
+  height: 30px;
+  color: #bbb;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.button--del-book:hover {
+  background-color: #e22727;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.button--save {
+  width: 130px;
+  height: 30px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #5cb3ecd0;
+  padding: 5px 10px;
+  margin-left: 70px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.button--save:hover {
+  background-color: #104cb4;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.button--close {
+  width: 130px;
+  height: 30px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #ee79b4;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.button--close:hover {
+  background-color: #e22727;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.booklist__button {
+  font-family: 'PT Serif', serif;
+  font-size: 14px;  
+}
+
+.booklist__button__main {
+  color: #fff;
+  background-color: #115ae0;
+  font-family: 'PT Serif', serif;
+}
+
+.booklist__button__main:hover {
+  background-color: #104cb4;
+  transition: 0.4s ease;
+}
+
+.inlaining p {           /* put 2nd and 3rd <p> in one line in*/
+  display: inline;               /* second <td> of <table> */
+}
+
+footer {
+  color: #0c68b4;
+  font-size: 16px;
+  position: fixed;
+  right: 139px;
+  left: 170px;
+  padding: 0px;
+  text-align: center;
+	background-color: #eef1f7;
+	bottom: 0;
+}
+
+footer p a:hover {
+  color: #104cb4;
+  text-decoration: none;
+}
+
+
+
+
+
+@media screen and (max-width: 676px) {
+	td {
+    display: block;
+  }
+  .booklist__title, .add-book__title {
+    font-size: 23px;
+  }
+  .button--add-book {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgb(17, 90, 224);
+  padding: 0px 2px;
+  cursor: pointer;
+}
+  .add-book {
+  max-width: 940px;
+  width: 69%;
+  margin: -470px 0px 0px 0px;
+  padding: 0px 15px 15px 15px;
+  background-color: #eee;
+  text-align: left;
+  z-index: 100;
+  position: absolute;
+}
+
+footer {
+  display: none;
+}
+
+}

@@ -43,6 +43,7 @@
   text-align: left;
   z-index: 100;
   position: absolute;
+  top: 60%;
 }
 
 .booklist__title, .add-book__title {

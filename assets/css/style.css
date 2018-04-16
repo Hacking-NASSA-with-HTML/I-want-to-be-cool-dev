@@ -41,7 +41,7 @@
   padding: 0px 15px 15px 15px;
   background-color: #eee;
   text-align: left;
-  z-index: 100;
+  z-index: 2;
   position: absolute;
   top: 60%;
 }
@@ -135,19 +135,52 @@ width: -webkit-calc(100% - 60px);
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 19;
+  background: #1b1a1a;
+  z-index: 1;
 }
 
 .button--add-book {
-  width: 220px;
-  height: 60px;
-  font-size: 19px;
-  color: #fff;
-  background-color: rgb(17, 90, 224);
-  padding: 5px 52px;
-  cursor: pointer;
-  font-family: 'PT Serif', serif;
+ border: 3px solid #115ae0;
+ font-size: 19px;
+ color: #115ae0;
+ width: 220px;
+ height: 60px;
+ display: block;
+ font-family: 'PT Serif', serif;
+ position: relative;
+ transition: .5s;
+ overflow: hidden;
+ padding: 4px 52px;
+ cursor: pointer;
+}
+
+.button--add-book::before,
+.button--add-book::after {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 100%;
+ background-color: #115ae0;
+ top: 0;
+ left: -100%;
+ opacity: .5;
+ transition: .3s;
+ z-index: -1;
+}
+
+.button--add-book::after {
+ opacity: 1;
+ transition-delay: .2s;
+}
+
+.button--add-book:hover {
+ color: #ffffff;
+ z-index: 1;
+}
+
+.button--add-book:hover::before,
+.button--add-book:hover::after {
+ left: 0;
 }
 
 .button--edit-book {
@@ -223,17 +256,6 @@ width: -webkit-calc(100% - 60px);
   font-size: 14px;  
 }
 
-.booklist__button__main {
-  color: #fff;
-  background-color: #115ae0;
-  font-family: 'PT Serif', serif;
-}
-
-.booklist__button__main:hover {
-  background-color: #104cb4;
-  transition: 0.4s ease;
-}
-
 .inlaining p {           /* put 2nd and 3rd <p> in one line in*/
   display: inline;               /* second <td> of <table> */
 }
@@ -259,6 +281,16 @@ footer p a:hover {
 
 
 
+
+
+@media screen and (max-width: 716px) {
+.button--close {
+  margin-left: 70px;
+}
+
+}
+
+
 @media screen and (max-width: 676px) {
 	td {
     display: block;
@@ -276,18 +308,39 @@ footer p a:hover {
   cursor: pointer;
 }
   .add-book {
-  max-width: 940px;
+
   width: 69%;
-  margin: -470px 0px 0px 0px;
-  padding: 0px 15px 15px 15px;
+  margin: -220px 0px 0px 0px;
+  padding: 0px 0px 15px 40px;
   background-color: #eee;
   text-align: left;
-  z-index: 100;
+  z-index: 2;
   position: absolute;
+  top: 50%;
 }
 
 footer {
   display: none;
+}
+
+.add-book__form-block {
+  width:70%;
+  margin-left: 30px;
+  position: relative;
+}
+
+.add-book__input {
+  margin: 0 0 0 30px;
+  width: 70%;
+  height: 16px;
+}
+
+.add-book__label {
+  margin-left: 30px;
+}
+
+.add-book__input--year {
+  width: 20%;
 }
 
 }
